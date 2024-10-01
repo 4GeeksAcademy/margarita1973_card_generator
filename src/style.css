@@ -1,1 +1,50 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+* {
+  box-sizing: border-box;
+}
+.card {
+  width: 300px;
+  height: 440px;
+  border-radius: 15px;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.poker-card-black p {
+  border-radius: 15px;
+  color: black;
+}
+
+.poker-card-red p {
+  border-radius: 15px;
+  color: red;
+}
+
+.card-header,
+.card-footer {
+  display: flex;
+  padding: 0px;
+  font-size: 60px;
+  background-color: white;
+  border: none;
+}
+.card-footer {
+  transform: rotateX(180deg);
+  justify-content: end;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#card-number {
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "Old Standard TT", serif;
+}
+.input-group {
+  width: 400px;
+}
